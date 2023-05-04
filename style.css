@@ -148,5 +148,16 @@ nav a {
     height: 300px;
 }
 
+.testimonials {
+  background-color: #333;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center; /* center the content horizontally */
+}
+
+.testimonial {
+  margin: 0 auto; /* center the div horizontally */
+  max-width: 600px; /* set the maximum width of the div */
+}
 
 .services li i
