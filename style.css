@@ -75,7 +75,7 @@ nav a {
 .hero::before {
   content: "Free consultation available at 9999999999";
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
   height: 100%;
