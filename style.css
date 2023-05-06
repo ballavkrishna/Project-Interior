@@ -73,7 +73,7 @@ nav a {
 }
 
 .hero::before {
-  content: "";
+  content: "Free consultation available at 9999999999";
   position: absolute;
   top: 0;
   left: 0;
