@@ -210,6 +210,21 @@ nav a {
 .contact-image img {
   width: 200px;
 }
+.consultation-btn span {
+  position: relative;
+  display: inline-block;
+  animation: moveText 2s infinite;
+}
+
+@keyframes moveText {
+  0% {left: 0;}
+  50% {left: 10px;}
+  100% {left: 0;}
+}
+
+#consultation-btn:hover span {
+  color: red;
+}
 
 
 .services li i 
