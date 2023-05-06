@@ -159,5 +159,39 @@ nav a {
   margin: 0 auto; /* center the div horizontally */
   max-width: 600px; /* set the maximum width of the div */
 }
+.contact {
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.contact-methods a {
+  font-size: 24px;
+  color: #000;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-methods a:hover {
+  color: #007bff;
+}
+
+.contact-image {
+  margin-right: 50px;
+}
+
+.contact-image img {
+  width: 200px;
+}
+
 
 .services li i
