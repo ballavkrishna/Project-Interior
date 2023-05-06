@@ -56,7 +56,7 @@ nav a {
 .hero::before {
   content: "Free consultation available at 9999999999";
   font-size: 16px;
-  color: #ffffff;
+  color: #00FFFF;
   position: absolute;
   top: 0;
   left: -300px;
