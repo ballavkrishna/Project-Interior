@@ -210,7 +210,7 @@ nav a {
 .contact-image img {
   width: 200px;
 }
-.consultation-btn span {
+#consultation-btn span {
   position: relative;
   display: inline-block;
   animation: moveText 2s infinite;
