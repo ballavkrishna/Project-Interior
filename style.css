@@ -210,17 +210,24 @@ nav a {
 .contact-image img {
   width: 200px;
 }
-#consultation-btn span {
+#consultation-btn {
   position: relative;
-  display: inline-block;
-  animation: moveText 2s infinite;
 }
 
-@keyframes moveText {
-  0% {left: 0;}
-  50% {left: 10px;}
-  100% {left: 0;}
+#consultation-btn span::before {
+  content: "➡";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  animation: moveArrow 1s ease-in-out infinite alternate;
 }
+
+@keyframes moveArrow {
+  from { transform: translateX(0); }
+  to { transform: translateX(10px); }
+}
+
 
 #consultation-btn:hover span {
   color: red;
