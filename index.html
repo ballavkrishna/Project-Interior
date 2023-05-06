@@ -16,6 +16,7 @@
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#" id="consultation-btn">Free Consultation</a></li>
             </ul>
         </nav>
     </header>
@@ -92,6 +93,49 @@ s0.parentNode.insertBefore(s1,s0);
 </section>
 
     </main>
+    <div id="consultation-popup" class="popup">
+        <div class="popup-content">
+            <h2>Free Consultation</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <a href="#" class="close-btn">&times;</a>
+        </div>
+    </div>
+
+    <!-- Pop-up script -->
+    <script>
+        var consultationBtn = document.getElementById('consultation-btn');
+        var popup = document.getElementById('consultation-popup');
+        var closeBtn = document.querySelector('.close-btn');
+
+        consultationBtn.onclick = function() {
+            popup.style.display = 'block';
+        };
+
+        closeBtn.onclick = function() {
+            popup.style.display = 'none';
+        };
+
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        };
+    </script>
+
 
     <footer>
         <p>&copy; 2021 Interior Design. All rights reserved.</p>
